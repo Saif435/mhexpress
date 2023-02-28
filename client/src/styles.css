@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Comic+Neue:wght@300;400;700&family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root {
+  --Poppins: "Poppins", sans-serif;
+  --Comic: "Comic Neue", sans-serif;
+  --Assistant: "Assistant", sans-serif;
+
+  --Bgd: #edeef6;
+  --F1: #4cc24a;
+  --F2: rgba(18, 18, 18);
+  --F3: #bfbebe;
+  --F4: #1773b0;
+  --FormC1: rgb(214, 210, 210);
+}
+
+body {
+  font-family: var(--Assistant);
+}
+
+a:active,
+a:visited {
+  color: black;
+}
+
+button:disabled {
+  cursor: not-allowed !important;
+}
+
+.main-heading {
+  margin-bottom: 35px;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.default-heading {
+  font-size: 2.5rem;
+  letter-spacing: 0.8px;
+}
