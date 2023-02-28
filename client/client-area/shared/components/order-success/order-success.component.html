@@ -1,0 +1,24 @@
+<section>
+  <div class="order-header">
+    <h1>Your order has been received:</h1>
+    <fa-icon [icon]="Tick"></fa-icon>
+    <h2>Thank you for your purchase!</h2>
+    <h3>
+      Your Order ID: <span class="order-id">{{ orderId }}</span>
+    </h3>
+  </div>
+  <div class="btn-container">
+    <a routerLink="/">Back to home</a>
+    <a routerLink="/shop/all" [queryParams]="{ page: 1 }">Continue shopping</a>
+  </div>
+  <div class="order-footer">
+    <p>
+      Estimated arrival date of order:
+      <span class="delivery-date">{{ myDate | date : "dd-MMMM-yyyy" }}</span>
+    </p>
+    <p>
+      Please <a routerLink="/contact">Contact Us</a> if you have any questions
+      regarding your order.
+    </p>
+  </div>
+</section>

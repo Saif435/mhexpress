@@ -1,0 +1,8 @@
+<section>
+  <app-product-shop
+    [collection]="collection"
+    [products]="products"
+    (pageChange)="pageChangeEvent($event)"
+  ></app-product-shop>
+  <app-product-collection [categories]="categories"></app-product-collection>
+</section>

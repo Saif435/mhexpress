@@ -1,0 +1,29 @@
+section {
+  min-height: 100vh;
+  padding: 200px 80px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+section > * {
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  section {
+    padding: 160px 60px 150px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  section {
+    padding: 160px 40px 150px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section {
+    padding: 160px 20px 150px;
+  }
+}

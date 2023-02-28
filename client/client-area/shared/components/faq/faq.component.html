@@ -1,0 +1,27 @@
+<section>
+  <h1 class="main-heading">FAQ's</h1>
+  <div class="container">
+    <div class="accordion-item" *ngFor="let item of showAnswer; let i = index">
+      <div class="question-container" (click)="toggle(i)">
+        <h3 class="question" [ngClass]="{ question1: currentIndex === i }">
+          {{ item.question }}
+        </h3>
+        <span>
+          <fa-icon
+            *ngIf="currentIndex !== i"
+            class="faqIcons"
+            [icon]="Plus"
+          ></fa-icon>
+          <fa-icon
+            *ngIf="currentIndex === i"
+            class="faqIcons"
+            [icon]="Minus"
+          ></fa-icon
+        ></span>
+      </div>
+      <div class="answer-container" [ngClass]="{ visible: currentIndex === i }">
+        <p>{{ item.answer }}</p>
+      </div>
+    </div>
+  </div>
+</section>

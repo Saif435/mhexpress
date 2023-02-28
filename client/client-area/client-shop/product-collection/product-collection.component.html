@@ -1,0 +1,14 @@
+<ng-container>
+  <p class="default-heading">Collections</p>
+  <div class="collection-container">
+    <ng-container *ngFor="let category of categories">
+      <a
+        class="product-container"
+        [routerLink]="['/shop', category.name]"
+        [queryParams]="{ page: 1 }"
+      >
+        <p>{{ category.name }}</p>
+      </a>
+    </ng-container>
+  </div>
+</ng-container>

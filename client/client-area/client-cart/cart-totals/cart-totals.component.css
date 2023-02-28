@@ -1,0 +1,46 @@
+.total-container {
+  padding: 70px 0 0;
+  text-align: right;
+  border-top: 1px solid var(--F3);
+}
+
+.subtotal-info {
+  font-size: 1.2rem;
+}
+
+.subtotal-info span {
+  padding-left: 30px;
+  font-size: 1.6rem;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+
+.tax-info {
+  margin: 20px 0;
+  color: var(--F3);
+  font-weight: 600;
+}
+
+.total-container button {
+  background-color: black;
+  color: white;
+  width: 350px;
+  height: 50px;
+  font-family: var(--F2);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.total-container button:hover {
+  transform: scale(1.01, 1.01);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  .total-container button {
+    width: 300px;
+  }
+  .tax-info {
+    font-size: 0.9rem;
+  }
+}

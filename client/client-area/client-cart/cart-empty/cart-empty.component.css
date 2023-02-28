@@ -1,0 +1,36 @@
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 10px;
+}
+
+.empty-cart h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.empty-cart a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 250px;
+  height: 60px;
+  font-family: var(--F2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.empty-cart a:hover {
+  transform: scale(1.01, 1.01);
+}
+
+@media only screen and (max-width: 900px) {
+  .empty-cart {
+    padding: 0;
+  }
+}
