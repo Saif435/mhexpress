@@ -1,0 +1,40 @@
+.collection-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  text-decoration: none;
+  width: calc(97% / 3);
+  height: 350px;
+}
+
+.product-container p {
+  color: white;
+  font-family: var(--Comic);
+  font-size: 2.5rem;
+  font-weight: 600;
+  transition: 0.4s all;
+}
+
+.product-container:hover p {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1200px) {
+  .product-container {
+    width: 49%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .product-container {
+    width: 100%;
+  }
+}

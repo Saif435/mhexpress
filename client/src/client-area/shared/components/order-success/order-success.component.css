@@ -1,0 +1,78 @@
+section {
+  text-align: center;
+  min-height: 100vh;
+  padding: 120px 20px 25px;
+}
+
+.order-header h1 {
+  font-weight: 600;
+}
+
+fa-icon {
+  font-size: 4rem;
+  margin: 15px 0;
+}
+
+.order-header h3 {
+  margin-top: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.order-id {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.delivery-date {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  gap: 10px;
+}
+
+.btn-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--F1);
+  text-decoration: none;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 50px;
+  width: 250px;
+}
+
+.btn-container a:hover {
+  transition: 0.3s all;
+  transform: scale(1.01);
+}
+
+.order-footer p {
+  font-size: 1.2rem;
+  word-spacing: 2px;
+  margin: 10px;
+}
+
+a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+  color: black;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+}

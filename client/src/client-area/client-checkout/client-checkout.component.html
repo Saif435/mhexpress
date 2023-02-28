@@ -1,0 +1,14 @@
+<section *ngIf="items && (cartTotals$ | async)">
+  <app-banner></app-banner>
+  <div class="checkout-container">
+    <app-shipping-details
+      class="shipping-wrapper"
+      [cartTotals$]="cartTotals$ | async"
+    ></app-shipping-details>
+    <app-order-details
+      class="order-wrapper"
+      [cartTotals]="cartTotals$ | async"
+      [items]="items"
+    ></app-order-details>
+  </div>
+</section>

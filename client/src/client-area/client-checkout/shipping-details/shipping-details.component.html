@@ -1,0 +1,71 @@
+<div class="shipping-details">
+  <form #f="ngForm">
+    <div class="contact-information">
+      <p class="primary-header">Contact information</p>
+      <div class="input-container">
+        <input [(ngModel)]="order.email" name="email" required type="email" />
+        <span class="floating-label">Email</span>
+      </div>
+      <div class="input-container">
+        <input [(ngModel)]="order.phoneNumber" name="phoneNumber" required />
+        <span class="floating-label">Phone number</span>
+      </div>
+      <div class="half-container">
+        <div class="input-container">
+          <input [(ngModel)]="order.firstName" name="firstName" required />
+          <span class="floating-label">First Name</span>
+        </div>
+
+        <div class="input-container">
+          <input [(ngModel)]="order.lastName" name="lastName" required />
+          <span class="floating-label">Last Name</span>
+        </div>
+      </div>
+    </div>
+    <div class="shipping-information">
+      <p class="primary-header">Shipping information</p>
+      <div class="half-container">
+        <div class="input-container">
+          <input readonly value="South Africa" />
+          <span class="floating-label-country">Country/Region</span>
+        </div>
+        <div class="input-container">
+          <input required />
+          <span class="floating-label">Province</span>
+        </div>
+      </div>
+      <div class="half-container">
+        <div class="input-container">
+          <input required />
+          <span class="floating-label">City</span>
+        </div>
+        <div class="input-container">
+          <input required />
+          <span class="floating-label">Postal Code</span>
+        </div>
+      </div>
+
+      <div class="input-container">
+        <input [(ngModel)]="order.address" name="address" required />
+        <span class="floating-label">Address</span>
+      </div>
+    </div>
+    <div class="btn-container">
+      <div class="con">
+        <button type="button" (click)="backToCart()" class="back-btn">
+          <fa-icon class="left-icon" [icon]="Left"></fa-icon>Return to cart
+        </button>
+      </div>
+      <div class="con">
+        <button
+          type="submit"
+          [disabled]="f.invalid"
+          (click)="pay()"
+          class="checkout-btn"
+        >
+          Continue to payment
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

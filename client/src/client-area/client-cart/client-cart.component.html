@@ -1,0 +1,18 @@
+<section>
+  <ng-container *ngIf="items.length >= 1">
+    <div class="heading-container">
+      <h1>Your cart</h1>
+      <a routerLink="/shop/all" [queryParams]="{ page: 1 }"
+        >Continue shopping</a
+      >
+    </div>
+    <app-cart-summary
+      (remove)="removeCartItem($event)"
+      (increment)="incrementCartItem($event)"
+      (decrement)="decrementCartItem($event)"
+      [items]="items"
+    ></app-cart-summary>
+    <app-cart-totals [items]="cartTotals$ | async"></app-cart-totals>
+  </ng-container>
+  <app-cart-empty *ngIf="items.length == 0"></app-cart-empty>
+</section>
